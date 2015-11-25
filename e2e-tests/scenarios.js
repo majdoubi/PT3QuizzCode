@@ -11,7 +11,7 @@ describe('my app', function() {
   });
 
 
-  describe('view1', function() {
+  describe('qcm', function() {
 
     beforeEach(function() {
       browser.get('index.html#/view1');
@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('test', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#/test');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render test when user navigates to /test', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });
