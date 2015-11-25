@@ -91,7 +91,7 @@ app/                    --> all of the source files for the application
       interpolate-filter_test.js --> interpolate filter tests
   view1/                --> the view1 view template and logic
     view1.html            --> the partial template
-    qcm.js              --> the controller logic
+    enseignantListes.js              --> the controller logic
     qcm_test.js         --> tests of the controller
   test/                --> the test view template and logic
     test.html            --> the partial template
