@@ -15,4 +15,3 @@ function HeaderEnseignantCtrl(){
     vm.header.name = "headerEnseignant";
     vm.header.url = "components/header/header-enseignant/header-enseignant.html";
 }
-

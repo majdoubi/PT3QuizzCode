@@ -4,9 +4,9 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.view2',
-  //'myApp.header',
-  //'myApp.header.headerEnseignant',
-  //'myApp.version'
+  'myApp.header',
+  'myApp.header.headerEnseignant',
+  'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/'});
