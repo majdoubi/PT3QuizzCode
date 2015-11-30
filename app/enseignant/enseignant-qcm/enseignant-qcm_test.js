@@ -1,6 +1,6 @@
 'use strict';
 
-describe('myApp.enseignant-qcm module', function() {
+describe('myApp.enseignantQcm module', function() {
 
   beforeEach(module('myApp.enseignant-qcm'));
 
