@@ -5,7 +5,8 @@ angular.module( "myApp.header.headerEnseignant")
         $routeProvider.when('/header-enseignant', {
             templateUrl: 'components/header/header-enseignant/header-enseignant.html',
             controller: 'HeaderEnseignantCtrl',
-            controllerAs: 'header'
+            controllerAs: 'header',
+            transclude: true
         });
     }])
     .controller( "HeaderEnseignantCtrl", HeaderEnseignantCtrl);

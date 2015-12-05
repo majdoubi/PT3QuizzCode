@@ -6,7 +6,8 @@ angular.module( "myApp.header.headerEnseignant")
 
 function headerEnseignant(){
    return {
-       templateUrl: "components/header/header-enseignant/header-enseignant.html"
+       templateUrl: "components/header/header-enseignant/header-enseignant.html",
+       transclude: false
    };
 
 }

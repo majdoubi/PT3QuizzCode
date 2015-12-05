@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view2',
   'myApp.header',
+  'myApp.headerTest',
   'myApp.header.headerEnseignant',
   'myApp.version'
 ]).
