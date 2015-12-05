@@ -1,8 +1,8 @@
 'use strict';
 
-describe('myApp.enseignant-qcm module', function() {
+describe('quizzCode.enseignantQcm module', function() {
 
-  beforeEach(module('myApp.enseignant-qcm'));
+  beforeEach(module('quizzCode.enseignant-qcm'));
 
   describe('enseignant-qcm controller', function(){
 

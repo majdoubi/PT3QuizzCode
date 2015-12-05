@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('myApp.enseignant-qcm', ['ngRoute'])
+angular.module('quizzCode.enseignantQcm', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/enseignant-qcm', {
-    templateUrl: 'enseignant-qcm/enseignant-qcm.html',
+    templateUrl: 'enseignant/enseignant-qcm/enseignant-qcm.html',
     controller: 'EnseignantQcmCtrl'
   });
 }])
