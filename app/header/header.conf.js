@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.header')
+angular.module('quizzCode.header')
     .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
    $stateProvider.state("enseignant", {url:"/enseignant", templateUrl:"enseignant/enseignant-header.html" })

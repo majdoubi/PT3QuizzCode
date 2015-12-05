@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('myApp.header.headerEnseignant', ['ngRoute']);
+angular.module('quizzCode.header.headerEnseignant', ['ngRoute']);

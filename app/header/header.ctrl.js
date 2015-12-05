@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.header', [ 'ui.bootstrap', 'ui.router' ])
+angular.module('quizzCode.header', [ 'ui.bootstrap', 'ui.router' ])
     .controller('HeaderCtrl', HeaderCtrl);
 
 

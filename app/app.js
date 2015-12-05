@@ -1,12 +1,10 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('quizzCode', [
   'ngRoute',
-  'myApp.view2',
-  'myApp.header',
-  'myApp.header.headerEnseignant',
-  'myApp.version'
+  'quizzCode.header',
+  'quizzCode.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/'});

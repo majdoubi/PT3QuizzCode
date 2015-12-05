@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module( "myApp.header.headerEnseignant")
+angular.module( "quizzCode.header.headerEnseignant")
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/header-enseignant', {
             templateUrl: 'components/header/header-enseignant/header-enseignant.html',

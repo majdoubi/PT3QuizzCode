@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module( "myApp.header.headerEnseignant")
+angular.module( "quizzCode.header.headerEnseignant")
     .directive( "headerEnseignant", headerEnseignant);
 
 
