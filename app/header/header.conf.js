@@ -9,7 +9,7 @@ angular.module('myApp.header')
                 .state("enseignant.listes", { url: "/listes", templateUrl: "enseignant/enseignant-listes.html" })
                 .state("enseignant.comptes", { url: "/comptes", templateUrl: "enseignant/enseignant-comptes.html" });
 
-   $urlRouterProvider.otherwise("/");
+   $urlRouterProvider.otherwise("/enseignant/qcm");
 
    /*
    $locationProvider.html5Mode({
