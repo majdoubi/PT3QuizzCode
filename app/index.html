@@ -31,18 +31,13 @@
 <script src="header/header.conf.js"></script>
 <script src="app.js"></script>
 
-
-
 <div ng-controller="HeaderCtrl">
   <uib-tabset justified="true">
-    <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" ui-sref="enseignant.{{tab.state}}">
+    <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" ui-sref="{{usertype}}.{{tab.state}}">
       <div ui-view></div>
     </uib-tab>
   </uib-tabset>
 </div>
-
-
-<p>Huuum …….</p>
 
 </body>
 </html>
