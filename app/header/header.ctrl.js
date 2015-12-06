@@ -7,6 +7,7 @@ angular.module('quizzCode.header', [
     .controller('HeaderCtrl', HeaderCtrl);
 
 
+//TODO Pour éviter les problèmes de dépendances ne plus utiliser des if mais une fonction qui génère dynamiquement
 function HeaderCtrl($scope, $state, User) {
     $scope.username = User.type;
     $scope.usertype = User.type;
@@ -32,6 +33,7 @@ function HeaderCtrl($scope, $state, User) {
         ];
     }
     else{
+        User.type = 'anonymous';
         $scope.tabs = [
             {title: 'Erreur', state: 'login'}
         ];
