@@ -10,20 +10,20 @@ angular.module('quizzCode', [
     'quizzCode.login',
     'quizzCode.version'
 ]).
-config(function($stateProvider, $urlRouterProvider, $locationProvider){
+config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
         .state("login", {
-            url:"/login",
-            templateUrl:"login/login.html",
-            controller:"LoginCtrl"
+            url: "/login",
+            templateUrl: "login/login.html",
+            controller: "LoginCtrl"
         })
         .state("enseignant", {
             abstract: true,
-            url:"/enseignant",
-            templateUrl:"header/header.html",
-            data:{
-                permissions:{
+            url: "/enseignant",
+            templateUrl: "header/header.html",
+            data: {
+                permissions: {
                     only: ['enseignant'],
                     redirectTo: 'login'
                 }
@@ -31,10 +31,10 @@ config(function($stateProvider, $urlRouterProvider, $locationProvider){
         })
         .state("etudiant", {
             abstract: true,
-            url:"/etudiant",
-            templateUrl:"header/header.html",
-            data:{
-                permissions:{
+            url: "/etudiant",
+            templateUrl: "header/header.html",
+            data: {
+                permissions: {
                     only: ['etudiant'],
                     redirectTo: 'login'
                 }
@@ -42,10 +42,10 @@ config(function($stateProvider, $urlRouterProvider, $locationProvider){
         })
         .state("administrateur", {
             abstract: true,
-            url:"/administrateur",
-            templateUrl:"header/header.html",
-            data:{
-                permissions:{
+            url: "/administrateur",
+            templateUrl: "header/header.html",
+            data: {
+                permissions: {
                     only: ['administrateur'],
                     redirectTo: 'login'
                 }
@@ -55,10 +55,10 @@ config(function($stateProvider, $urlRouterProvider, $locationProvider){
     $urlRouterProvider.otherwise("/login");
 
     /*
-    $locationProvider.html5Mode({
+     $locationProvider.html5Mode({
      enabled: true,
      requireBase: false
-    });
-         */
+     });
+     */
 });
 
