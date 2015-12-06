@@ -6,7 +6,15 @@ angular.module('quizzCode', [
   'quizzCode.header',
   'quizzCode.version'
 ]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/'});
-}]);
+config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
+        $stateProvider.state("login", {url:"/login", templateUrl:"enseignant/enseignant-header.html" })
+        $urlRouterProvider.otherwise("/");
+
+        /*
+         $locationProvider.html5Mode({
+         enabled: true,
+         requireBase: false
+         });
+         */
+});
