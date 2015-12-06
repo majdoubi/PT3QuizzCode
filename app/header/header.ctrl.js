@@ -7,9 +7,9 @@ angular.module('quizzCode.header', [
     .controller('HeaderCtrl', HeaderCtrl);
 
 
-function HeaderCtrl($scope, $state) {
-    $scope.username = "Mr. Finck";
-    $scope.usertype = "enseignant";
+function HeaderCtrl($scope, $state, User) {
+    $scope.username = User.type;
+    $scope.usertype = User.type;
 
   $scope.tabs = [
     { title:'QCM', state:'qcm', content:'QCM'},

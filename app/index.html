@@ -24,6 +24,9 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-permission/dist/angular-permission.js"></script>
+<script src="components/users/users.permissions.js"></script>
+<script src="components/users/user.serv.js"></script>
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
@@ -34,7 +37,11 @@
 <div ng-controller="HeaderCtrl">
   <uib-tabset justified="true">
     <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" ui-sref="{{usertype}}.{{tab.state}}">
-      <div ui-view></div>
+      <div ui-view>
+        <!--
+        <div data-ui-view="data-ui-view"></div>
+        -->
+      </div>
     </uib-tab>
   </uib-tabset>
 </div>
