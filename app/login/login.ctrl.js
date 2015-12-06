@@ -8,4 +8,5 @@ angular.module('quizzCode.login', [
 
 
 function LoginCtrl($scope, $state, User) {
+    $scope.user=User;
 }

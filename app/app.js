@@ -1,6 +1,5 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
 angular.module('quizzCode', [
     'quizzCode.permissions',
     'quizzCode.administrateur',
@@ -8,6 +7,7 @@ angular.module('quizzCode', [
     'quizzCode.etudiant',
     'quizzCode.header',
     'quizzCode.login',
+    'quizzCode.logout',
     'quizzCode.version'
 ]).
 config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
