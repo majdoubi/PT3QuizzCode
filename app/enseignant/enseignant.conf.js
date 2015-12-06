@@ -1,6 +1,9 @@
 'use strict';
 
-angular.module('quizzCode.header')
+angular.module('quizzCode.enseignant', [
+        'ui.bootstrap',
+        'ui.router'
+    ])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
    $stateProvider.state("enseignant.qcm", { url: "/qcm", templateUrl: "enseignant/enseignant-qcm.html" })

@@ -31,20 +31,14 @@
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
 <script src="header/header.ctrl.js"></script>
-<script src="header/header.conf.js"></script>
+<script src="enseignant/enseignant.conf.js"></script>
+<script src="etudiant/etudiant.conf.js"></script>
+<script src="administrateur/administrateur.conf.js"></script>
+<script src="login/login.ctrl.js"></script>
+<script src="login/login.conf.js"></script>
 <script src="app.js"></script>
 
-<div ng-controller="HeaderCtrl">
-  <uib-tabset justified="true">
-    <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" ui-sref="{{usertype}}.{{tab.state}}">
-      <div ui-view>
-        <!--
-        <div data-ui-view="data-ui-view"></div>
-        -->
-      </div>
-    </uib-tab>
-  </uib-tabset>
-</div>
+<div ui-view></div>
 
 </body>
 </html>

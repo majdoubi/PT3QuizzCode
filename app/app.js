@@ -3,7 +3,11 @@
 // Declare app level module which depends on views, and components
 angular.module('quizzCode', [
     'quizzCode.permissions',
+    'quizzCode.administrateur',
+    'quizzCode.enseignant',
+    'quizzCode.etudiant',
     'quizzCode.header',
+    'quizzCode.login',
     'quizzCode.version'
 ]).
 config(function($stateProvider, $urlRouterProvider, $locationProvider){
@@ -15,21 +19,40 @@ config(function($stateProvider, $urlRouterProvider, $locationProvider){
             controller:"LoginCtrl"
         })
         .state("enseignant", {
-            abstact: true,
+            abstract: true,
             url:"/enseignant",
-            template:"<ui-view/>",
+            templateUrl:"header/header.html",
             data:{
                 permissions:{
                     only: ['enseignant'],
                     redirectTo: 'login'
                 }
             }
+        })
+        .state("etudiant", {
+            abstract: true,
+            url:"/etudiant",
+            templateUrl:"header/header.html",
+            data:{
+                permissions:{
+                    only: ['etudiant'],
+                    redirectTo: 'login'
+                }
+            }
+        })
+        .state("administrateur", {
+            abstract: true,
+            url:"/administrateur",
+            templateUrl:"header/header.html",
+            data:{
+                permissions:{
+                    only: ['administrateur'],
+                    redirectTo: 'login'
+                }
+            }
         });
-        //.state("enseignant", {abstact: true, url:"/enseignant", template:"<ui-view/>", data: {access: access.enseignant} });
-        //.state("etudiant", {abstact: true, url:"/etudiant", template:"<ui-view/>", data: {access: access.etudiant} })
-        //.state("administrateur", {abstact: true, url:"/administateur", template:"<ui-view/>", data: {access: access.administateur} });
 
-    $urlRouterProvider.otherwise("/enseignant/qcm");
+    $urlRouterProvider.otherwise("/login");
 
     /*
     $locationProvider.html5Mode({

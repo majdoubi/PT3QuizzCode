@@ -1,0 +1,7 @@
+<div ng-controller="HeaderCtrl">
+  <uib-tabset justified="true">
+    <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" ui-sref="{{usertype}}.{{tab.state}}">
+      <div ui-view><!-- <div data-ui-view="data-ui-view"></div> --></div>
+    </uib-tab>
+  </uib-tabset>
+</div>
