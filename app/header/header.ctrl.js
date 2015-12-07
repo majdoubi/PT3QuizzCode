@@ -10,7 +10,6 @@ angular.module('quizzCode.header', [
 //TODO Pour éviter les problèmes de dépendances ne plus utiliser des if mais une fonction qui génère dynamiquement les tabs
 function HeaderCtrl($scope, $state, User) {
     $scope.username = User.type;
-    $scope.usertype = User.type;
 
     if (User.type === 'enseignant') {
         $scope.tabs = [
